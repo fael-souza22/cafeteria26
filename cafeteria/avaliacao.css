@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.linha{
+    width: 100%;
+    height: 12px;
+    background: #000;
+}
+.titulo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #654321;
+    font-family: Libre Baskerville;
+}
+
+.texto{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25x 60px;
+    background: #f4f4f4;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.topo-links,
+.icones-super {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #b89b73;
+}
+
+.topo-links a,
+.icones-super a {
+    color: #b89b73;
+    text-decoration: none;
+    font-size: 20px;
+}
+.icones-super i {
+    font-size: 24px;
+    color: #b89b73;
+}
+
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo,
+    .topo-links {
+        flex-direction: column;
+    }
+}
+
+.rodape{
+    footer {
+        display: flex;
+     justify-content: center;
+     background: #b89b73;
+    padding: 20px;
+    border-top: 5px solid #faedcd;
+    
+    }
+}
+
+footer{
+    background:#6d3c11;
+    color:white;
+    padding:40px;
+}
+
+.rodape{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px 100px;
+}
+
+.bloco a{
+    display:block;
+    color:white;
+}
+
+.rodapefim{
+    text-align:center;
+    margin-top:30px;
+}
+
+
+
+form{
+    background: #fff;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6f4e37;
+    color: #fff;
+    cursor: pointer;
+}
+
+.centralizar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
